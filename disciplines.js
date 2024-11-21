@@ -1,1 +1,1 @@
-
+discipline["Animalism","Auspex","Blood Sorcery","Celerity","Dominate","Fortitude","Obfuscate","Oblivion","Potence","Presence","Presence","Thin-blood Alchemy"];
