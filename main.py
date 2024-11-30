@@ -12,4 +12,4 @@ async def on_message(message):
     if message.conent.startwith('/ls clan'):
         await message.channel.send('Banu Haqim Brujah Gangrel Hecata Lasombra Malkavian The Ministry Nosferatu Ravnos Salubri Toreador Tremere Tzimisce Ventrue Caitiff Thin-blood')
 
-client.run(os.getenv('token'))
+client.run('')
