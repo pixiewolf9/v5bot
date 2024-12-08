@@ -21,7 +21,7 @@ compulsion= will list the Compulsion
 for example /clan Banu_Haqim all will  give you every thing. So, will /clan Banu_Haqim a
 """
 
-Banu_Haqim_info="""General
+Banu_Haqim_info="""
 
 Banu Haqim are one of the fourteen vampire clans of Vampire: The Masquerade. The Judges of the Banu Haqim are torn between their hereditary thirst for vampiric Blood and their passion for justice. Stern adjudicators, they are fiercely devoted to upholding a moral code, and Embrace mortals capable of assessing and handling threats, enforcing laws and traditions, and punishing transgressors.[1]
 
@@ -41,3 +41,22 @@ Noxious Blood - The Blood of the Banu Haqim is toxic to mortals, but not to othe
 Banu_Haqim_Compulsion="""Compulsion
 
 Judgement - Urged to punish a wrongdoer, the vampire must slake one Hunger from anyone that acts against their own Convictions. Failing to do so results in a three-dice penalty to all rolls until the Compulsion is satisfied or the scene ends. Should the victim be a vampire, the Bane applies."""
+Brujah_Info="""Brujah are one of the fourteen vampire clans of Vampire: The Masquerade. The Brujah are a clan of radicals and troublemakers, Embracing those willing to put someone in their place if the situation calls for it. Most see themselves as warriors with a cause, and these Rebels are guided by their passions, strength, and dedication to their ideals — whatever those may be.
+
+Brujah are generally Embraced from the ranks of those who are sympathetic to those who do not back down. Seeking out others who question the status quo and welcome countercultures. From spirited fighters to critical thinkers, the clan is bolstered by their ability to withstand the storm and persevere through hardships. The Brujah are commonly misplaced as the street punks or anarchists who are looking for nothing but trouble. However, this is far from the truth"""
+Brujah_Disciplines="""Disciplines
+
+Below are the powers innate to the Brujah as well as the uses they find in it.
+
+    Celerity allows the Brujah to strike fast and move even faster when the situation becomes too dangerous.
+    Potence gives them the strength behind their attacks, bolstering their swings and allowing them to use fists rather than words to sway.
+    Presence is never the last resort with a Brujah. Giving them an edge when attempting to use words rather than physical violence to make their point."""
+Brujah_Bane="""Bane
+
+Violent Temper - A rage is simmering in the back of the mind with a Brujah with the slightest provocation able to send them into a frenzied rage. Subtracts dice equal to the Bane Severity of the Brujah against Fury Frenzy.[3]
+Variant Bane
+
+Violence - When a messy critical occurs as the result of any Skill test outside of combat, a Brujah vampire causes damage to the subject of their interaction equal to their Bane Severity, in addition to any other result of the Hunger dice. The type of damage is dependent on the situation either physical or mental. The damage is Aggravated unless the player spends a point of Willpower to turn it into Superficial."""
+Brujah_Compulsion="""Compulsion
+
+Rebellion - The Brujah craves to take a stance against those who represent the status quo. This does not relent until they have gone against orders, expectations, or changed someone's mind. During this Compulsion, they suffer a -2 to dice all pools"""
