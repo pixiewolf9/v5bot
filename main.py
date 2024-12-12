@@ -47,6 +47,9 @@ async def clan(ctx: discord.ApplicationContext,clan="fgh",arg2="a"):
         else:
             error_embed=discord.Embed(title="error",description=error_clan,color=discord.Color.blue())
             await ctx.send(embed=error_embed)
+    elif clan=="ls":
+        ls_embed=discord.Embed(title="ls",description=ls,color=discord.Color.blue())
+        await ctx.send(embed=ls_embed)
     elif clan=="brujah":
         
         

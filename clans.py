@@ -1,4 +1,7 @@
-error_clan="""clan syntax
+ls="banu_haqim Brujah Gangrel Hecata Lasombra Malkavian The_Ministry Nosferatu Ravnos Salubri Toreador Tremere Tzimisce Ventrue .\n \n Clanless \n\n Caitiff  Thin_blood "
+error_clan="""
+ls=will list clans
+clan syntax
 
 you may also use the first letter of the command for short hand
 
@@ -338,7 +341,7 @@ Thin-bloods created the art of thin-blood alchemy, granting them the potential t
 Whenever they feed from a Resonance, they are granted one dot and one power in a Discipline tree associated with the Resonance. If the Resonance is Intense or stronger, they gain an additional dot in conjunction with a second power. This, however, is only temporary as the rating cannot be increased with experience points and is lost upon hitting Hunger 5 or the next feeding. With the thin-blood Merit Discipline Affinity, they are able to select one Discipline and traverse the tree as if a True Kindred.[3]
 
     Thin-blood Alchemy is created from the thin vitae only thin-bloods possess."""
-thin_blood_Bane="""Bane
+thin_blood_Bane="""Bane && Compulsion n/a
 
 Thin-bloods do not suffer from a Bane unless the thin-blood Flaw Clan Curse is taken. """
 thin_blood_Compulsion="""Compulsion
