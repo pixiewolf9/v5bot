@@ -1,43 +1,31 @@
 import discord
-from discord import SlashCommandGroup 
+from discord.ui import Button, View
 import os # default module
 from dotenv import load_dotenv
-from clans import *
+from discord.ext import command
+import os
+import asyncio
+load_dotenv() # load all the variables from the env file
 bot = discord.Bot()
 @bot.event
 async def on_ready():
+    await client.tree.sync()
     print("I am ready I am ready") 
 
 with open("token") as file:
     token=file.read()   
-@bot.listen()
-@bot.SlashCommandGroup(name="clan",description="clans of v5")
-async def clan (ctx):
-    ls_embed=discord.Embed(title="all the clans",description=ls,color=discord.Color.blue())
-    await ctx.send(embed=ls_embed)
+@bot.event
+async def on_ready():
+    
+    print(f"{bot.user} is ready and online!")
 
+@bot.slash_command(name="clan", description="Say hello to the bot")
 
-@clan.slash_command(name="brujah", description="all, info , description, bane or compulsion")
-async def Brujah_Data(ctx,input:str):
-    if (arg2=="all") or (arg2=="a"):
-        Brujah_all_embed=discord.Embed(title="Brujah",description=Brujah_Info+"\n \n"+Brujah_Disciplines+"\n \n" +Brujah_Bane+"\n \n"+Brujah_Compulsion,color=discord.Color.blue())
-        await ctx.send(embed=Brujah_all_embed)
-        
-    elif (arg2=="info")or(arg2=="i"):
-        Brujah_embed=discord.Embed(title="Brujah",description=Brujah_Info,color=discord.Color.blue())
-        await ctx.send(embed=Brujah_embed)
-        
-    elif (arg2=="disciplines") or(arg2=="d"):
-        Brujah_Disciplines_embed=discord.Embed(title="Brujah Disciplines",description=Brujah_Disciplines,color=discord.Color.blue())
-        await ctx.send(embed=Brujah_Disciplines_embed)
-    elif (arg2=="bane") or(arg2=="b"):
-        Brujah_Bane_embed=discord.Embed(title="Brujah Bane",description=Brujah_Bane,color=discord.Color.blue())
-        await ctx.send(embed=Brujah_Bane_embed)
-    elif (arg2=="compulsion") or(arg2=="c"):
-        Brujah_Compulsion_embed=discord.Embed(title="Brujah compulsion",description=Brujah_Compulsion,color=discord.Color.blue())
-        await ctx.send(embed=Brujah_Compulsion_embed)
-        
-    else:
-        error_embed=discord.Embed(title="error",description=error_clan,color=discord.Color.blue())
-        await ctx.send(embed=error_embed)    
+async def load():
+    for filename in os.listdir("./files"):
+        if filename.endswith(".py"):
+            await client.load_extension(f"files.{filename[:-3]}")
+
+    
+
 bot.run(token) # run the bot with the token
