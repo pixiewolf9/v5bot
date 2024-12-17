@@ -2,30 +2,19 @@ import discord
 from discord.ui import Button, View
 import os # default module
 from dotenv import load_dotenv
-from discord.ext import command
+from discord.ext import commands
 import os
-import asyncio
+
+from clans_str import *
 load_dotenv() # load all the variables from the env file
 bot = discord.Bot()
 @bot.event
 async def on_ready():
-    await client.tree.sync()
     print("I am ready I am ready") 
 
 with open("token") as file:
-    token=file.read()   
-@bot.event
-async def on_ready():
-    
-    print(f"{bot.user} is ready and online!")
-
-@bot.slash_command(name="clan", description="Say hello to the bot")
-
-async def load():
-    for filename in os.listdir("./files"):
-        if filename.endswith(".py"):
-            await client.load_extension(f"files.{filename[:-3]}")
-
+    token=file.read() 
+bot.load_extension('cogs.clan')
+bot.run(token)
     
 
-bot.run(token) # run the bot with the token
