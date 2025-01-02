@@ -1,14 +1,13 @@
 import discord
 from discord.ext import commands
-load_dotenv() # load all the variables from the env file
-class clan(commands.Cogs):
+class clan(commands.Cog):
     def _init_(self,bot):
         self.bot=bot
     discord.slash_command(name="clan", description="Say hello to the bot")
     @commands.Cog.listener()
     async def on_ready(self):
         print("clans is working")
-    @commands.commad()
+    @commands.command()
     async def clan(ctx: discord.ApplicationContext,clan="fgh",arg2="a"):
         clan=clan.lower()
         arg2=arg2.lower()
